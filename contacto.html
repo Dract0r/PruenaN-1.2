@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carritoH.html">Ropa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¡Contáctanos!</h2>
+            <form id="contactForm" onsubmit="return validarFormulario()" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sitio Web de tienda de ropa deportiva</p>
+    </footer>
+
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var mensaje = document.getElementById("mensaje").value;
+
+            // Validar que los campos no estén vacíos
+            if (nombre.trim() == "" || email.trim() == "" || mensaje.trim() == "") {
+                alert("Por favor, completa todos los campos.");
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Validar el formato del correo electrónico
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Por favor, ingresa un correo electrónico válido.");
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Si todo está bien, el formulario se puede enviar
+            return true;
+        }
+    </script>
+</body>
+</html>

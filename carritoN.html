@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="style2.css">
+		<link rel="stylesheet" href="contacto.html">
+	</head>
+	<body>
+        
+		<header>			
+            
+				<nav class="navbar navbar-expand-lg bg-body-tertiary p-2"  id="menu" >
+					<div class="container-fluid">
+					  <a class="navbar-brand" href="#"> <span class="text-primary fs-5 fw-bold">Ropa deportiva</span></a>
+					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				
+						  <li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="carritoH.html">Seccion hombres</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="carritoM.html">Seccion mujeres</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="contacto.html">contacto</a>
+						  </li>
+						  <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</ul>        
+					</div>
+				  </nav>
+
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">1</span>
+				</div>
+
+				
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$40.990</span>
+                    </div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://www.diadora.com/dw/image/v2/BBPK_PRD/on/demandware.static/-/Sites-diadora-master/default/dw38afaeee/images/hi-res/502.181825_80013_00_HR.jpg?sw=480"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Polera antitranspirante</h2>
+                    <h5>Marca:Diadora</h5>
+					<p class="price">$15.990 CLP</p>
+					<button>Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSiEwVa4bNsvMlWtg_aMGn4nAQHcR2ZBTDTqOpGWyPQ&s"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto deportivo</h2>
+                    <h5>Marca: Adidas</h5>
+					<p class="price">$30.990 CLP</p>
+					<button>Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGyb0u9IG2r-XqmDxJ4OeSGfbt85T1eXS-gV-VUxY2w&s"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatillas deportivas </h2>
+                    <h5>Marca: Nike</h5>
+					<p class="price">$40.990 CLP</p>
+					<button>Añadir al carrito</button>
+				</div>
+			</div>
+			
+		</div>
+
+        <script src="index.js"></script>
+	</body>
+</html>
